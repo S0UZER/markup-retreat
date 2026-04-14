@@ -1,10 +1,18 @@
-.empty-star {
-    width: 15%;
-    height: 15%;
-    margin: 15;
-    padding: 0;
+/* Пиши стили тут */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
-.empty-star:hover {
-    content: url("./img/star.png");
+.empty-star {
+    width: 50px;
+    height: 50px;
+    content: url("./img/star-empty.png");
+}
+
+.empty-star:hover,
+.empty-star:hover ~ .empty-star {
+    content: url("./img/star-filled.png");
 }
