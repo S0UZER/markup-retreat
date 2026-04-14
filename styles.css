@@ -1,1 +1,10 @@
-/* Пиши стили тут */
+.empty-star {
+    width: 15%;
+    height: 15%;
+    margin: 15;
+    padding: 0;
+}
+
+.empty-star:hover {
+    content: url("./img/star.png");
+}
