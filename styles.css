@@ -6,13 +6,24 @@
     justify-content: flex-end;
 }
 
-.empty-star {
+.rating input {
+    display: none;
+}
+
+.star {
     width: 50px;
     height: 50px;
+    display: block;
+    cursor: pointer;
     content: url("./img/star-empty.png");
 }
 
-.empty-star:hover,
-.empty-star:hover ~ .empty-star {
-    content: url("./img/star-filled.png");
+.star:hover,
+.star:hover ~ .star {
+    content: url("./img/star.png");
+}
+
+.rating input:checked + .star,
+.rating input:checked + .star ~ .star {
+    content: url("./img/star.png");
 }
